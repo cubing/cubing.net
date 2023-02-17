@@ -1,0 +1,450 @@
+<html>
+
+<head>
+  <meta charset="utf8">
+  <title>cubing.net</title>
+  <link rel="shortcut icon" href="favicon.png" />
+  <style type="text/css">
+    body {
+      background: #ACE;
+      font-family: Helvetica;
+    }
+
+    #title {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 4em;
+      font-family: Helvetica;
+      font-weight: bold;
+      color: #FFF;
+      text-shadow: 0px 0px 16px #444;
+      font-variant: small-caps;
+    }
+
+    .links {
+      margin-top: 0px;
+      text-align: center;
+      line-height: 200%;
+      font-size: 2em;
+      font-family: Helvetica;
+      font-weight: bold;
+      color: #FFF;
+      text-shadow: 0px 0px 16px #444;
+      font-variant: small-caps;
+    }
+
+    a:link,
+    a:visited {
+      /* color: #FFF; */
+    }
+
+    a:hover {
+      color: #CDF;
+    }
+
+    .image {
+      text-align: center;
+    }
+
+    .image img {
+      width: 200px;
+    }
+
+    table.competition_table {
+      margin: 8px auto;
+      font-size: 14px;
+      /*width: 70%;*/
+      border-collapse: collapse;
+    }
+
+    .competition_table thead,
+    tbody {
+      border: 1px solid #AAA;
+    }
+
+    .competition_table thead tr {
+      background: rgb(239, 239, 239);
+      /* Old browsers */
+      background: -moz-linear-gradient(top, rgba(239, 239, 239, 1) 0%, rgba(207, 207, 207, 1) 100%);
+      /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(239, 239, 239, 1)), color-stop(100%, rgba(207, 207, 207, 1)));
+      /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(top, rgba(239, 239, 239, 1) 0%, rgba(207, 207, 207, 1) 100%);
+      /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(top, rgba(239, 239, 239, 1) 0%, rgba(207, 207, 207, 1) 100%);
+      /* Opera11.10+ */
+      background: -ms-linear-gradient(top, rgba(239, 239, 239, 1) 0%, rgba(207, 207, 207, 1) 100%);
+      /* IE10+ */
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#efefef', endColorstr='#cfcfcf', GradientType=0);
+      /* IE6-9 */
+      background: linear-gradient(top, rgba(239, 239, 239, 1) 0%, rgba(207, 207, 207, 1) 100%);
+      /* W3C */
+    }
+
+    .competition_table tbody td,
+    thead td {
+      font-size: 16px;
+      padding: 0px 16px;
+      height: 1.6em;
+      border: none;
+    }
+
+    .competition_table thead tr {
+      border-top: 1px solid #888;
+    }
+
+    .competition_table thead td {
+      color: #666;
+      font-weight: bold;
+    }
+
+    .competition_table tbody tr:nth-child(even) {
+      background: #EEE;
+    }
+
+    .competition_table tbody tr:nth-child(odd) {
+      background: #FFF;
+    }
+
+    .competition_table tbody tr a {
+      color: #33F;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .competition_table tbody tr a:hover {
+      color: #229;
+    }
+
+    .competition_table tbody td {}
+
+    .competition_table tbody.filler {
+      border: none;
+    }
+
+    .competition_table tbody.filler tr {
+      background: none !important;
+    }
+
+  </style>
+  <?php include("site/ga.php");?>
+</head>
+
+<body>
+
+  <a href="https://www.cubing.net/">
+    <div class="image"><img src="single_cube_white_stickers.png" /></div>
+  </a>
+
+  <table class="competition_table">
+    <thead>
+      <tr>
+        <td>Purpose</td>
+        <td>By</td>
+        <td>Site</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>⏯ Twizzle ᴬᴸᴾᴴᴬ</td>
+        <td>Lucas Garron, Tom Rokicki, etc.</td>
+        <td><a href="https://twizzle.net/">alpha.twizzle.net</a></td>
+      </tr>
+      <tr>
+        <td>⏯ Alg</td>
+        <td>Lucas Garron</td>
+        <td><a href="https://alg.cubing.net/">alg.cubing.net</a></td>
+      </tr>
+      <tr>
+        <td>⏱ Timer</td>
+        <td>Lucas Garron</td>
+        <td><a href="https://timer.cubing.net/">timer.cubing.net</a></td>
+      </tr>
+      <tr>
+        <td>🖼️ Icons</td>
+        <td>Devin Corr-Robinett, et al.</td>
+        <td><a href="https://icons.cubing.net/">icons.cubing.net</a></td>
+      </tr>
+      <tr>
+        <td>🔀 Scramble</td>
+        <td>Lucas Garron</td>
+        <td><a href="https://scramble.cubing.net/">scramble.cubing.net</a></td>
+      </tr>
+      <tr>
+        <td>🔢 WCA Inspection web app</td>
+        <td>Lucas Garron</td>
+        <td><a href="https://inspection.cubing.net/">inspection.cubing.net</a></td>
+      </tr>
+      <tr>
+        <td>⏪ Negative Time Solving Contest</td>
+        <td>Lucas Garron (formerly Shotaro Makisumi)</td>
+        <td><a href="https://negative-time.cubing.net/">negative-time.cubing.net</a></td>
+      </tr>
+      <tr>
+        <td>🧪 Experiments (cubing.js)</td>
+        <td>Lucas Garron, Tom Rokicki, etc.</td>
+        <td><a href="https://experiments.cubing.net/cubing.js/">experiments.cubing.net/cubing.js</a></td>
+      </tr>
+      <tr>
+        <td>↔️ Bluetooth</td>
+        <td>Lucas Garron</td>
+        <td><a href="https://bluetooth.cubing.net/">bluetooth.cubing.net</a></td>
+      </tr>
+      <tr>
+        <td>👓 Virtual Reality</td>
+        <td>Lucas Garron</td>
+        <td><a href="https://vr.cubing.net/">vr.cubing.net</a></td>
+      </tr>
+      <tr>
+        <td>⚔️ FMC Duel</td>
+        <td>Lucas Garron</td>
+        <td><a href="https://fmc-duel.cubing.net/">fmc-duel.cubing.net</a></td>
+      </tr>
+      <tr>
+        <td>🎮 Experimental Javascript Cube Sim</td>
+        <td>Lucas Garron</td>
+        <td><a href="twisty.js/">twisty.js</a></td>
+      </tr>
+      <tr>
+        <td>👆 Mobile/Touch Cube Interaction Concept</td>
+        <td>Lucas Garron</td>
+        <td><a href="touch/">Touch Cube</a></td>
+      </tr>
+      <tr>
+        <td>PLL Trainer</td>
+        <td>Lucas Garron</td>
+        <td><a href="1lpll/">1LPLL</a></td>
+      </tr>
+      <tr>
+        <td>ACube port to Javascript</td>
+        <td>(Josef Jelinek, et al.)</td>
+        <td><a href="ACube.js/">ACube.js</a></td>
+      </tr>
+      <tr>
+        <td>ksolve+ port to Javascript</td>
+        <td>(Kare Krig, Michael Gottlieb, et al.)</td>
+        <td><a href="ksolve.js/">ksolve.js</a></td>
+      </tr>
+      <tr>
+        <td>ksolve state sim + SVG visualization in JS</td>
+        <td>Lucas Garron</td>
+        <td><a href="ksolve-js-svg/">ksolve-js-svg</a></td>
+      </tr>
+      <tr>
+        <td>Javascript WCA-Style Scrambler</td>
+        <td>Lucas Garron, et al.</td>
+        <td><a href="mark2/">Mark 2</a></td>
+      </tr>
+      <tr>
+        <td>The WCA's Finest News Source</td>
+        <td>Shelley Chang</td>
+        <td><a href="https://carrot.cubing.net/">carrot.cubing.net</a></td>
+      </tr>
+      <tr>
+        <td>Cube Software Archive</td>
+        <td>Lucas Garron</td>
+        <td><a href="software">cubing.net/software</a></td>
+      </tr>
+      <!--tr>
+  <td>Unofficial WCA Statistics</td>
+  <td>Shotaro Makisumi</td>
+  <td><a href="https://stats.cubing.net/">stats.cubing.net</a></td>
+</tr-->
+      <tr>
+        <td>CALCubeTimer</td>
+        <td>Jeremy Fleischman, Ryan Zheng</td>
+        <td><a href="https://cct.cubing.net/">CCT Homepage</a></td>
+      </tr>
+      <tr>
+        <td>Live Competition Results for the World</td>
+        <td>Jim Mertens</td>
+        <td><a href="https://live.cubing.net/">live.cubing.net</a></td>
+      </tr>
+      <tr>
+        <td>Online Timer by Michael Gottlieb</td>
+        <td>Michael Gottlieb</td>
+        <td><a href="https://www.qqtimer.net/">qqtimer.net <img src="img/external_link.png"></a></td>
+      </tr>
+      <tr>
+        <td>Cubing on GitHub</td>
+        <td>-</td>
+        <td><a href="https://github.com/cubing/">github.com/cubing <img src="img/external_link.png"></a></td>
+      </tr>
+      <tr>
+        <td>JS Cubing</td>
+        <td>-</td>
+        <td><a href="https://js.cubing.net/">js.cubing.net</a></td>
+      </tr>
+      <tr>
+        <td>Cubing Archive</td>
+        <td>-</td>
+        <td><a href="https://archive.cubing.net/">archive.cubing.net</a></td>
+      </tr>
+      <tr>
+        <td>Cubing Notation</td>
+        <td>-</td>
+        <td><a href="https://notation.cubing.net/">notation.cubing.net</a></td>
+      </tr>
+      <tr>
+        <td>AnimCubeJS</td>
+        <td>Josef Jelínek, Tadeáš Miler, Michael Feather</td>
+        <td><a href="https://animcubejs.cubing.net/animcubejs.html">animcubejs.cubing.net</a></td>
+      </tr>
+      <!-- <tr>
+  <td>TNoodle</td>
+  <td>Jeremy Fleischman, Cl&eacute;ment Gallet, etc.</td>
+  <td><a href="https://tnoodle.cubing.net/">TNoodle Homepage</a></td>
+</tr> -->
+    </tbody>
+
+    <tbody class="filler">
+      <tr>
+        <td colspan="3"></td>
+      </tr>
+    </tbody>
+
+    <thead>
+      <tr>
+        <td>Purpose</td>
+        <td>By</td>
+        <td>Site</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Fantasy Cubing</td>
+        <td>Caleb Hoover</td>
+        <td><a href="https://fantasy.cubing.net/">fantasy.cubing.net</a></td>
+      </tr>
+      <tr>
+        <td>CubeCast Podcast</td>
+        <td>Waffo, Ranzha, and Meechay</td>
+        <td><a href="https://cubecast.cubing.net/">cubecast.cubing.net</a></td>
+      </tr>
+      <tr>
+        <td>BLD practice tool</td>
+        <td><a href="https://github.com/adimare">adimare</a></td>
+        <td><a href="https://scrambld.cubing.net/">ScramBLD.cubing.net</a></td>
+      </tr>
+      <!--tr>
+  <td>Cubing Site</td>
+  <td>Arthur Adams</td>
+  <td><a href="https://arthur.cubing.net/">arthur.cubing.net</a></td>
+</tr-->
+      <tr>
+        <td>Cubing Site</td>
+        <td>Aron Puddy-Mathew</td>
+        <td><a href="https://aronpm.cubing.net/">aronpm.cubing.net</a></td>
+      </tr>
+      <!--tr>
+  <td>Cubing Site</td>
+  <td>Rob (&quot;Brest&quot;)</td>
+  <td><a href="https://brest.cubing.net/">brest.cubing.net</a></td>
+</tr-->
+      <!--tr>
+  <td>Cubing Site</td>
+  <td>Bruce Norskog</td>
+  <td><a href="https://bruce.cubing.net/">bruce.cubing.net</a></td>
+</tr-->
+      <!--tr>
+  <td>Cubing Site</td>
+  <td>Chester Lian</td>
+  <td><a href="https://chester.cubing.net/">chester.cubing.net</a></td>
+</tr-->
+      <!--tr>
+  <td>Cubing Site</td>
+  <td>Cornelius Dieckmann</td>
+  <td><a href="https://corny.cubing.net/">corny.cubing.net</a></td>
+</tr-->
+      <!--tr>
+  <td>Cubing Site</td>
+  <td>Erik Akkersdijk</td>
+  <td><a href="https://erik.cubing.net/">erik.cubing.net</a></td>
+</tr-->
+      <!--tr>
+  <td>Cubing Site</td>
+  <td>Tim Sun</td>
+  <td><a href="https://esk.cubing.net/">erik.cubing.net</a></td>
+</tr-->
+      <!--tr>
+  <td>Cubing Site</td>
+  <td>Feliks Zemdegs</td>
+  <td><a href="https://faz.cubing.net/">faz.cubing.net</a></td>
+</tr-->
+      <tr>
+        <td>Cubing Site</td>
+        <td>Stefan Huber</td>
+        <td><a href="https://hubi.cubing.net/blog/">hubi.cubing.net</a></td>
+      </tr>
+      <tr>
+        <td>Cubing Site</td>
+        <td>Mike Hughey</td>
+        <td><a href="https://hughey.cubing.net/">hughey.cubing.net</a></td>
+      </tr>
+      <!--tr>
+  <td>Cubing Site</td>
+  <td>India</td>
+  <td><a href="https://inda.cubing.net/">india.cubing.net</a></td>
+</tr-->
+      <tr>
+        <td>Cubing Site</td>
+        <td>Kris de Asis</td>
+        <td><a href="https://meep.cubing.net/">meep.cubing.net</a></td>
+      </tr>
+      <!--tr>
+  <td>Cubing Site</td>
+  <td>Prisma Puzzle Timer</td>
+  <td><a href="https://prisma.cubing.net/">prisma.cubing.net</a></td>
+</tr-->
+      <!--tr>
+  <td>Cubing Site</td>
+  <td>Robert Yau</td>
+  <td><a href="https://robert.cubing.net/">robert.cubing.net</a></td>
+</tr-->
+      <tr>
+        <td>Cubing Site</td>
+        <td>Brandon &quot;Ranzha&quot; Harnish</td>
+        <td><a href="https://ranzha.cubing.net/">ranzha.cubing.net</a></td>
+      </tr>
+      <!--tr>
+  <td>Cubing Site</td>
+  <td>Rowe Hessler</td>
+  <td><a href="https://rowe.cubing.net/">rowe.cubing.net</a></td>
+</tr-->
+      <!--tr>
+  <td>Cubing Site</td>
+  <td>Sarah Strong</td>
+  <td><a href="https://sarah.cubing.net/">sarah.cubing.net</a></td>
+</tr-->
+      <tr>
+        <td>Cubing Site</td>
+        <td>Stachu Korick</td>
+        <td><a href="https://stachu.cubing.net/">stachu.cubing.net</a></td>
+      </tr>
+      <!--tr>
+  <td>Cubing Site</td>
+  <td>Tim Reynolds</td>
+  <td><a href="https://tim.cubing.net/">tim.cubing.net</a></td>
+</tr-->
+      <!--tr>
+  <td>Cubing Site</td>
+  <td>Jules Manalang</td>
+  <td><a href="https://waffle.cubing.net/">waffle.cubing.net</a></td>
+</tr-->
+      <tr>
+        <td>Cubing Site</td>
+        <td>Ben Streeter</td>
+        <td><a href="https://speedy.cubing.net/">speedy.cubing.net</a></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <br><br>
+  <center>
+    If you have something to share and would like a <code>cubing.net</code>
+    subdomain for it, feel free to email <a href="https://garron.net/">Lucas
+      Garron</a>.
+  </center>
+
+</body>
+</head>
