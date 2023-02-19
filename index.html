@@ -89,10 +89,6 @@
       border: none;
     }
 
-    .competition_table thead tr {
-      border-top: 1px solid #888;
-    }
-
     .competition_table thead td {
       color: #666;
       font-weight: bold;
@@ -124,6 +120,44 @@
 
     .competition_table tbody.filler tr {
       background: none !important;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      body {
+        background: #123c66;
+        color: #DDD;
+      }
+
+      a,
+      .competition_table tbody tr a {
+        color: #669df5;
+      }
+
+      a:visited,
+      .competition_table tbody tr a:visited {
+        color: #af73d5;
+      }
+
+      .competition_table tbody tr:nth-child(odd) {
+        background: #191919;
+      }
+
+      .competition_table tbody tr:nth-child(even) {
+        background: #333;
+      }
+
+      .competition_table thead,
+      tbody {
+        border: 1px solid #222;
+      }
+
+      .competition_table thead td {
+        color: white;
+      }
+
+      .competition_table thead tr {
+        background: -webkit-linear-gradient(top, rgba(32, 32, 32, 1) 0%, rgba(64, 64, 64, 1) 100%);
+      }
     }
 
   </style>
@@ -449,6 +483,6 @@
     subdomain for it, feel free to email <a href="https://garron.net/">Lucas
       Garron</a>.
   </center>
-
+  <br><br>
 </body>
 </head>
