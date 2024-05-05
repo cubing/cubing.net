@@ -1,0 +1,11 @@
+{
+  "@cubing/deploy": {
+    "https://cubing.net/": {
+      "fromLocalDir": ".",
+      "additionalExcludes": [
+        "Makefile",
+        "package.json"
+      ]
+    }
+  }
+}
